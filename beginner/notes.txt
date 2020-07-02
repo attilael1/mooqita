@@ -1,0 +1,10 @@
+1 - For the random lines i thought about using shasum, $RANDOM and base64 but it didnt looked as random besides not printing lines starting with a,
+ thats why i decided to try and experiment with /dev/urandom
+
+2 - I thought about using logrotate to limit file size, but decided to use a size comparison inside the script to avoid external processes and to keep it simple.
+I chose du command over ls -l to the file to check its size, because i thinl its simpler
+
+
+3 - Initially i used sort with -h human readable sorting, but i didnt like the way it looked, so i decided to use sort with no options because it looked like it sorted by number lower case then uppercase letters
+
+5 - 2511 lines where removed
